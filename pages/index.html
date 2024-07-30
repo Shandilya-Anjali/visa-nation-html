@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!--common link-->
+    <link rel="stylesheet" href="../assets/css/dist/style.css">
+
+</head>
+
+<body>
+
+    <!--header-start-->
+    <header id="header" class="ctm-header">
+        <div class="container-fluid">
+            <div class="flex flex-wrap justify-between items-center m-0 p-0 relative w-full">
+                <div class="logo-block">
+                    <span class="logo">
+                        <a href="index.html" aria-label="VisaNation Law Group"><img
+                                src="../assets/images/header-logo.png" width="182" height="32"
+                                alt="VisaNation Law Group"></a>
+                    </span>
+                </div>
+                <button class="nav-opener button-container" aria-label="Menu Open">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>
+                <nav class="nav-bar nav-drop ">
+                    <ul class="main-nav lg:flex lg:flex-wrap lg:gap-[30px]">
+                        <li class="menu-item">
+                            <a href="#" class="has-submenu">Services
+                                <span class="sub-arrow"></span>
+                            </a>
+                            <ul class="mega-menu hidden">
+                                <li class="container-fluid">
+                                    <div class="mega-menu__inner">
+                                        <div class="mega-menu__left">
+                                            <div class="mega-menu__image"><img
+                                                    src="../assets/images/VisaNation-immigration-software.gif"
+                                                    alt="VisaNation immigration software"></div>
+                                            <h4 class="mega-menu__heading">Immigration Expertise Delivered</h4>
+                                            <p class="mega-menu__content">Let our deep legal expertise and
+                                                technology-enabled processes guide you in your U.S. immigration journey
+                                            </p>
+                                            <div class="mega-menu__cta"><a href="#" target="">Success Stories</a></div>
+                                        </div>
+                                        <div class="mega-menu__right">
+                                            <ul class="col-3">
+                                                <li class="menu-item"><a href="#">Work Visas</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="#">H-1B Visa</a></li>
+                                                        <li class="menu-item"><a href="#">L-1 Visa</a></li>
+                                                        <li class="menu-item"><a href="#">O-1 Visa</a>
+                                                        </li>
+                                                        <li class="menu-item"><a href="#">TN
+                                                                Visa</a></li>
+                                                        <li class="menu-item"><a href="#">J-1 Visa</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">Employment
+                                                        Green Card
+                                                    </a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="#">EB-1 Green
+                                                                Card</a></li>
+                                                        <li class="menu-item"><a href="#">EB-2 Green
+                                                                Card</a></li>
+                                                        <li class="menu-item"><a href="#">EB-2 NIW
+                                                                Green Card</a></li>
+                                                        <li class="menu-item"><a href="#">EB-3
+                                                                Green Card</a></li>
+                                                        <li class="menu-item"><a href="#">PERM
+                                                                Labor Certification</a></li>
+                                                        <li class="menu-item"><a href="#">EB-4 Green
+                                                                Card</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a href="#">Investor
+                                                        Immigration</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="#">E-1
+                                                                Treaty Trader Visa</a></li>
+                                                        <li class="menu-item"><a href="#">E-2 Investor
+                                                                Visa</a></li>
+                                                        <li class="menu-item"><a href="#">EB-5
+                                                                Investment Green Card</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a href="#">Family Based
+                                                        Immigration</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="#">K-1
+                                                                Fiancé Visa</a></li>
+                                                        <li class="menu-item"><a href="#">K-2
+                                                                Visa</a></li>
+                                                        <li class="menu-item"><a href="#">K-3
+                                                                Spouse Visa</a></li>
+                                                        <li class="menu-item"><a href="#">Marriage
+                                                                Green Card</a></li>
+                                                        <li class="menu-item"><a href="#">Family
+                                                                Green Card</a></li>
+                                                        <li class="menu-item"><a href="#">Sibling
+                                                                Green Card</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a href="#">Citizenship</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="#">Overview</a>
+                                                        </li>
+                                                        <li class="menu-item"><a href="#">Naturalization
+                                                                Interview</a></li>
+                                                        <li class="menu-item"><a href="">Citizenship
+                                                                Denials</a></li>
+                                                        <li class="menu-item"><a href="">Naturalization
+                                                                Replacement</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item"><a href="#">Other</a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item"><a href="">B-1
+                                                                Visa</a></li>
+                                                        <li class="menu-item"><a href="">F-1
+                                                                Student Visa</a></li>
+                                                        <li class="menu-item"><a href="">R-1
+                                                                Visa</a></li>
+                                                        <li class="menu-item"><a href="">Green
+                                                                Card Lottery</a></li>
+                                                        <li class="menu-item"><a href="">GC
+                                                                Consular Processing</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">About us</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Why VisaNation?</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Testimonials</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="tools-bar flex flex-wrap gap-[16px]">
+                    <div class="btn-frame">
+                        <a class="btn btn-blue-header btn-blue btn-arrow" href="javascript:void(0);" target="_self">
+                            Book Consultation<span class="arrow"></span>
+                        </a>
+                    </div>
+                    <div class="btn-frame">
+                        <a class="btn btn-a-orange btn-arrow" href="javascript:void(0);" target="_blank">
+                            Free Assessment <span class="arrow"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header-end-->
+
+    <!--banner-start-->
+    <section class="banner-wrapper relative py-[32px]">
+        <div class="container-fluid">
+            <div class="flex flex-wrap justify-center items-center lgscreen:gap-[30px]">
+                <div class="w-full lg:w-6/12 lg:order-1 order-2">
+                    <div class="banner-content lg:max-w-[540px] mr-48 flex flex-col gap-[8px]">
+                        <div class="title title-p-400">
+                            <h1>
+                                More Family Time, Less Paperwork.
+                            </h1>
+                        </div>
+                        <div class="content big">
+                            <p>
+                                Family immigration made easy. VisaNation will handle your green card
+                            </p>
+                        </div>
+                        <div class="btn-custom">
+                            <a href="javascript:void(0)" class="btn btn-orange">
+                                Get Your Free Assessment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 lg:order-2 order-1">
+                    <div class="banner-img">
+                        <div class="img">
+                            <img src="../assets/images/banner-img.jfif" height="483" width="536" alt="banner-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--banner-end-->
+
+    <!--trusted-start-->
+    <section class="trust-wrapper pb-48">
+        <div class="container-fluid">
+            <div class="title mb-16">
+                <h6>
+                    Trusted by
+                </h6>
+            </div>
+            <div class="trust-content">
+                <div class="flex  justify-center items-center gap-[24px]">
+                    <div class="w-full lg:w-3/12 bg-White">
+                        <div class="trust-img">
+                            <div class="img">
+                                <img src="../assets/images/AILA.png" width="160" height="64" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-3/12 bg-White">
+                        <div class="trust-img">
+                            <div class="img">
+                                <img src="../assets/images/ABA.png" width="140" height="64" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-6/12 bg-White">
+                        <div class="trust-img">
+                            <div class="img">
+                                <img src="../assets/images/g-review.png" width="213" height="64" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--trusted-end-->
+    <!--three-card-component-start-->
+    <section class="three-card-component-warpper bg-White lgscreen:py-50 pt-[72px] relative ">
+        <div class="container-fluid">
+            <div class="title title-p-400 text-center lgscreen:mb-40 mb-60 last:mb-0">
+                <h2>
+                    Benefits of Working with
+                </h2>
+                <div class="subtitle-big">
+                    <h3>
+                        VisaNation
+                    </h3>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-center relative m-0 p-0 w-full gap-[24px]">
+                <div class="w-full lg:flex-1">
+                    <div class="card bg-secondary-300 px-24 pt-24 pb-48 rounded-[24px]">
+                        <div class="card-img overflow-hidden">
+                            <img src="../assets/images/support.jpg" class="w-full h-full object-cover" width="407"
+                                height="326" alt="6-Hour Private">
+                        </div>
+                        <div class="card-info block mt-[16px] ">
+                            <div class="title mb-26 ">
+                                <h4>
+                                    Compassionate Support
+                                </h4>
+                            </div>
+                            <ul class="flex flex-col gap-[24px]">
+                                <li>
+                                    <span>
+                                        Tailored Consultations
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Dedicated Case Manager
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Step-by-Step Guidance
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Regular Updates
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1">
+                    <div class="card bg-secondary-300 px-24 pt-24 pb-48 rounded-[24px]">
+                        <div class="card-img overflow-hidden ">
+                            <img src="../assets/images/Expert.jpg" class="w-full h-full object-cover" width="407"
+                                height="326" alt="6-Hour Private">
+                        </div>
+                        <div class="card-info block mt-[16px]  ">
+                            <div class="title mb-26 ">
+                                <h4>
+                                    Expert Legal Advice
+                                </h4>
+                            </div>
+                            <ul class="flex flex-col gap-[24px]">
+                                <li>
+                                    <span>
+                                        Experienced Attorneys
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        In-Depth Knowledge
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Strategic Planning
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Legal Representation
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1">
+                    <div class="card bg-secondary-300 px-24 pt-24 pb-48 rounded-[24px]">
+                        <div class="card-img overflow-hidden ">
+                            <img src="../assets/images/Success.jpg" class="w-full h-full object-cover" width="407"
+                                height="326" alt="6-Hour Private">
+                        </div>
+                        <div class="card-info block mt-[16px]  ">
+                            <div class="title mb-26 ">
+                                <h4>
+                                    Proven Success
+                                </h4>
+                            </div>
+                            <ul class="flex flex-col gap-[24px]">
+                                <li>
+                                    <span>
+                                        High Approval Rates
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Client Testimonials
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Successful Track Record
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Recognition and Awards
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-custom py-48 text-center">
+                <a href="javascript:void(0);" class="btn btn-orange"> Book Consultation</a>
+            </div>
+        </div>
+    </section>
+    <!--three-card-component-end-->
+
+    <!--genral-content-start-->
+    <section class="genral-content-warpper py-[40px]">
+        <div class="container-fluid">
+            <div class="flex flex-wrap justify-center items-center">
+                <div class="w-full lg:w-8/12">
+                    <div class="title-p-500 text-center mb-24 last:mb-0 flex flex-col gap-[16px]">
+                        <div class="subtitle-sm">
+                            <h3>
+                                Process
+                            </h3>
+                        </div>
+                        <h2>
+                            How Does VisaNation Work?
+                        </h2>
+                    </div>
+                    <div class="content big text-center lg:max-w-[768px] lg:mx-auto">
+                        <p>
+                            At VisaNation, we understand the importance of family unity. Our dedicated team is committed
+                            to simplifying the immigration process, ensuring you can reunite with your loved ones in the
+                            United States with ease.
+                        </p>
+                    </div>
+                    <div class="btn-custom mt-[8px] text-center">
+                        <a href="javascript:void(0);" class="btn btn-orange"> Book Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--genral-content-end-->
+
+    <!--zigzag-content-start-->
+    <section class="zigzag-content-wrapper py-40">
+        <div class="container-fluid">
+            <div class="zigzag-image-left">
+                <div class="flex flex-wrap justify-center items-center">
+                    <div class="w-full lg:w-6/12">
+                        <div class="zigzag-img">
+                            <div class="img">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <div class="zigzag-content">
+                            <div class="flex flex-col">
+                                <div class="title-p-500 flex flex-col gap-[24px] mb-16">
+                                    <div class="subtitle-md">
+                                        <h3>
+                                            Step 1
+                                        </h3>
+                                    </div>
+                                    <h3>
+                                        Fill out the Online Questionnaire
+                                    </h3>
+                                </div>
+                                <div class="content md">
+                                    <p>
+                                        Taking approximately 60 minutes to complete, both the sponsor and the immigrant
+                                        are required to provide information about their backgrounds, family,
+                                        relationship and employment . This thorough data collection enables us to
+                                        customize our strategy specifically to your case.
+                                    </p>
+                                </div>
+                                <div class="btn-custom mt-[8px]">
+                                    <a href="javascript:void(0);" class="btn btn-orange"> Book Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="zigzag-image-right">
+                <div class="flex flex-wrap justify-center items-center">
+                    <div class="w-full lg:w-6/12">
+                        <div class="zigzag-content">
+                            <div class="flex flex-col">
+                                <div class="title-p-500 flex flex-col gap-[24px] mb-16">
+                                    <div class="subtitle-md">
+                                        <h3>
+                                            Step 1
+                                        </h3>
+                                    </div>
+                                    <h3>
+                                        Fill out the Online Questionnaire
+                                    </h3>
+                                </div>
+                                <div class="content md">
+                                    <p>
+                                        Taking approximately 60 minutes to complete, both the sponsor and the immigrant
+                                        are required to provide information about their backgrounds, family,
+                                        relationship and employment . This thorough data collection enables us to
+                                        customize our strategy specifically to your case.
+                                    </p>
+                                </div>
+                                <div class="btn-custom mt-[8px]">
+                                    <a href="javascript:void(0);" class="btn btn-orange"> Book Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <div class="zigzag-img">
+                            <div class="img">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--zigzag-content-end-->
+
+    <!--four-card--start-->
+    <section class="four-card-component-warpper bg-White lgscreen:py-30 pt-[72px] pb-[32px] relative ">
+        <div class="container-fluid">
+            <div class="title title-p-500 text-center lgscreen:mb-30 mb-[48px] last:mb-0">
+                <h2>
+                    Types of family immigration
+                </h2>
+            </div>
+            <div class="flex flex-wrap items-center justify-center relative m-0 p-0 w-full gap-[24px]">
+                <div class="w-full lg:flex-1">
+                    <div class="card bg-secondary-300 rounded-[16px]">
+                        <div class="card-img overflow-hidden">
+                            <img src="../assets/images/Fiancé Visa.png" class="w-full h-full object-cover" width="290"
+                                height="248" alt="6-Hour Private">
+                        </div>
+                        <div class="card-info block pt-16 pb-32 px-16">
+                            <div class="title mb-26">
+                                <h4>
+                                    Fiancé Visa
+                                </h4>
+                            </div>
+                            <div class="content min-h-[80]">
+                                <p>
+                                    Bring your fiancé to the USA for your upcoming wedding.
+                                </p>
+                            </div>
+                            <div class="btn-custom">
+                                <a href="javascript:void(0);" class="btn btn-link">
+                                    Apply now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1">
+                    <div class="card bg-secondary-300 rounded-[16px]">
+                        <div class="card-img overflow-hidden">
+                            <img src="../assets/images/Marriage Green.jpg" class="w-full h-full object-cover"
+                                width="290" height="248" alt="6-Hour Private">
+                        </div>
+                        <div class="card-info block pt-16 pb-32 px-16">
+                            <div class="title mb-26 ">
+                                <h4>
+                                    Marriage Green Card
+                                </h4>
+                            </div>
+                            <div class="content min-h-[80px]">
+                                <p>
+                                    Secure permanent residency for your spouse.
+                                </p>
+                            </div>
+                            <div class="btn-custom">
+                                <a href="javascript:void(0);" class="btn btn-link">
+                                    Apply now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1">
+                    <div class="card bg-secondary-300 rounded-[16px]">
+                        <div class="card-img overflow-hidden">
+                            <img src="../assets/images/Parent Green.jpg" class="w-full h-full object-cover" width="290"
+                                height="248" alt="6-Hour Private">
+                        </div>
+                        <div class="card-info block pt-16 pb-32 px-16">
+                            <div class="title mb-26 ">
+                                <h4>
+                                    Parent Green Card
+                                </h4>
+                            </div>
+                            <div class="content min-h-[80px]">
+                                <p>
+                                    Reunite with your parents and provide them with residency.
+                                </p>
+                            </div>
+                            <div class="btn-custom">
+                                <a href="javascript:void(0);" class="btn btn-link">
+                                    Apply now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1">
+                    <div class="card bg-secondary-300 rounded-[16px]">
+                        <div class="card-img overflow-hidden">
+                            <img src="../assets/images/Children Green.jpg" class="w-full h-full object-cover"
+                                width="290" height="248" alt="6-Hour Private">
+                        </div>
+                        <div class="card-info block pt-16 pb-32 px-16">
+                            <div class="title mb-26 ">
+                                <h4>
+                                    Children Green Card
+                                </h4>
+                            </div>
+                            <div class="content min-h-[80px]">
+                                <p>
+                                    Ensure your children can join you in the United States.
+                                </p>
+                            </div>
+                            <div class="btn-custom">
+                                <a href="javascript:void(0);" class="btn btn-link">
+                                    Apply now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-custom py-48 text-center">
+                <a href="javascript:void(0);" class="btn btn-orange"> Book Consultation</a>
+            </div>
+        </div>
+    </section>
+    <!--three-card-component-end-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js "></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
