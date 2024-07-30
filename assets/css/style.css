@@ -235,6 +235,9 @@
     .btn-link:hover::after {
      animation: bounce_513 1s infinite;
     }
+    .btn-white {
+        @apply px-24 py-12 bg-White text-Black border-1 border-grey-200;
+    }
   
     @keyframes bounce_513 {
       0%,
@@ -682,15 +685,68 @@
     .zigzag-slider-wrapper .title-p-800 h4 {
         @apply !font-700
     }
-    .zigzag-slider-wrapper .content-right .img {
-        @apply relative overflow-hidden pt-[107.02%] h-full w-full rounded-[16px] 
-    }
-    .zigzag-slider-wrapper .content-right .img img {
-        @apply absolute h-full w-full object-cover top-0 left-0 ;
-    }
-    .zigzag-slider-wrapper .btn-navigation{
-        @apply absolute top-[50%] translate-y-minus_50 left-0 flex flex-wrap justify-between w-full ;
+    .zigzag-slider-wrapper .content-right{
+        @apply h-full lgscreen:mx-[50px]
     }
 
-      
+    .zigzag-slider-wrapper .content-right .img {
+        @apply relative overflow-hidden  h-full w-full rounded-[16px]  shadow-imgshadow
+    }
+    .zigzag-slider-wrapper .content-right .img img {
+        @apply h-full w-full object-cover top-0 left-0  ;
+    }
+    /* .zigzag-slider-wrapper .btn-navigation{
+        @apply absolute top-[50%] translate-y-minus_50 left-0 flex flex-wrap justify-between w-full ;
+    } */
+
+    .zigzag-slider-wrapper .swiper-button-next{
+        @apply lg:right-[calc(104px_-_0px)];
+    }
+    .zigzag-slider-wrapper .swiper-button-prev{
+        @apply lg:left-[calc(104px_-_0px)];
+    }
+
+    /* full-imgbox-start */
+    .full-img-cotainer img {
+        @apply h-full object-cover  ;
+        object-position: 0 -53px;
+    }
+    .full-img-cotainer::before {
+        @apply content-[''] top-0 left-0 bg-grey_gradient h-full w-full absolute;
+    }
+    .full-imgbox-wrapper .imgbox-content .title-white h2{
+        @apply text-40 font-700 leading-[120%] lgscreen:text-32 smscreen2:text-24
+    } 
+    
+    /* faq-start */
+    .faq-wrapper .accordion-item{
+        @apply w-full bg-primary-50  py-[20px] px-24 rounded-[16px] 
+    }
+    .faq-wrapper .accordion-item a {
+        @apply flex  items-center justify-between 
+    }
+    .faq-wrapper .accordion-content {
+        @apply pt-30
+    }
+
+    /* conatct-start */
+    .contact-wrapper .contact-img .img{
+        @apply relative overflow-hidden h-full w-full pt-[67.81%] rounded-[24px]
+    }
+    .contact-wrapper .contact-img .img img {
+        @apply absolute top-0 left-0 h-full w-full object-cover
+    }
+    .contact-wrapper .title h2 {
+        @apply font-700
+    }
+
+    /* testimonials-start */
+    .testimonial-wrapper .title h2 {
+        @apply font-700
+    }
+    .counter {
+        animation-duration: 1s;
+        animation-delay: 0s;
+      }
+ 
 }
