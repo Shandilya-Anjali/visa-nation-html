@@ -15,6 +15,8 @@ module.exports = {
     theme: {
         fontFamily: {
             plus: ['"Plus Jakarta Sans", sans-serif'],
+            helvetica: ['Helvetica Neue'],
+            roboto: ['"Roboto", sans-serif;'],
         },
 
         colors: {
@@ -26,19 +28,27 @@ module.exports = {
                 50: '#F0F2F8',
                 400: '#335286',
                 500: '#002768',
+                600: '#00235F',
                 700: '#001C4A',
                 800: '#001539',
                 900: '#00102C',
             },
             secondary: {
+                100: '#FF9178',
                 300: '#FFEFEB',
                 400: '#FF5B35',
                 500: '#B54126',
                 700: '#EF785C',
             },
             grey : {
-                700: '#2F2E2E'
-            }
+                200: '#B0BCD0',
+                300: '#EAECF0',
+                700: '#2F2E2E',
+            },
+            slate: {
+                100: '#F8FAFC',
+                200: '#94A3B8',
+            },
 
         },
         flex: {
@@ -244,7 +254,7 @@ module.exports = {
         },
         backgroundImage: theme => ({
             none: 'none',
-            'grey_gradient': 'linear-gradient(270deg, rgba(0, 0, 0, 0.00) 24.86%, rgba(0, 0, 0, 0.50) 74.48%), url(<path-to-image>) lightgray 0px -55.713px / 100% 222.222% no-repeat;',
+            'grey_gradient': 'linear-gradient(270deg, rgba(0, 0, 0, 0.00) 24.86%, rgba(0, 0, 0, 0.50) 74.48%);',
         }),
 
 
@@ -289,7 +299,7 @@ module.exports = {
         },
         boxShadow: {
             'shadow': '0px 16px 48px 15px rgba(0, 0, 0, 0.12);',
-            'imgshadow': ' 0px 16px 48px 15px rgba(0, 0, 0, 0.12);',
+            'imgshadow': '0px 6px 38px 10px rgba(0, 0, 0, 0.12)',
         },
 
 
