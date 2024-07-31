@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <!--font-->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
 
@@ -1239,7 +1241,7 @@
     <section class="contact-wrapper py-[96px] lgscreen:py-[50px] bg-primary-50">
         <div class="container-fluid">
             <div class="flex flex-wrap justify-center items-center">
-                <div class="w-full lg:w-7/12 pr-[48px]">
+                <div class="w-full lg:w-7/12 lg:pr-[48px]">
                     <div class="flex flex-col gap-[36px] lgscreen:gap-[10px]">
                         <div class="contact-title">
                             <div class="title mb-[8px]">
@@ -1272,10 +1274,10 @@
     <!--contact-end-->
 
     <!--footer-start-->
-    <footer class="footer py-[64px] lgscreen:py-[30px] bg-primary-500">
+    <footer class="footer py-[64px]  bg-primary-500">
         <div class="container-fluid">
             <div class="footer-newsletter mb-48">
-                <div class="flex flex-wrap justify-between">
+                <div class="flex flex-wrap justify-between lgscreen:flex-col gap-[16px]">
                     <div class="newsletter-content">
                         <div class="title-white mb-8">
                             <h5>
@@ -1291,9 +1293,11 @@
                     <div class="newsletter-form">
                         <div class="subscribe-wrapper flex flex-wrap gap-[16px]">
                             <label for="email" class="px-14 py-10 bg-White rounded-[4px]">
-                                <input type="email" name="email" class="subscribe-input w-[269px] border-0 h-full font-helvetica " placeholder="Enter your email">
+                                <input type="email" name="email"
+                                    class="subscribe-input lg:w-[269px] border-0 h-full font-helvetica "
+                                    placeholder="Enter your email">
                             </label>
-                            <a href="javascript:void(0);"  class="btn btn-orange submit-btn">
+                            <a href="javascript:void(0);" class="btn btn-orange submit-btn">
                                 Subscribe
                             </a>
                         </div>
@@ -1302,120 +1306,165 @@
             </div>
             <div class="footer-top py-48 border-t-1 border-0 border-b-1 border-primary-400 border-solid">
                 <div class="flex flex-wrap justify-start items-start">
-                    <div class="w-full lg:flex-1">
-                        <div class="footer-menu">
-                            <ul>
-                                <div class="title">
-                                    <h5>
-                                        Our services
-                                    </h5>
+                    <div class="w-6/12 lg:flex-1 order-1">
+                        <div class="flex lg:flex-wrap lgscreen:flex-col lgscreen:gap-[48px]">
+                            <div class="w-full lg:flex-1 order-1">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <div class="title">
+                                            <h5>
+                                                Our services
+                                            </h5>
+                                        </div>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Family law
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                All Applications
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Immigration law
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Family law
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        All Applications
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Immigration law
-                                    </a>
-                                </li>
-                            </ul>
+                            </div>
+                            <div class="w-full lg:flex-1  order-3 lg:order-2">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <div class="title">
+                                            <h5>
+                                                About
+                                            </h5>
+                                        </div>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                About us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                How we price
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Our pro bono work
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Reviews
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                    <div class="w-full lg:flex-1">
-                        <div class="footer-menu">
-                            <ul>
-                                <div class="title">
-                                    <h5>
-                                        About
-                                    </h5>
+                    <div class="w-6/12  lg:flex-1 order-1">
+                        <div class="flex lg:flex-wrap lgscreen:flex-col lgscreen:gap-[48px]">
+                            <div class="w-full lg:flex-1 order-2 lg:order-3">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <div class="title">
+                                            <h5>
+                                                Resources
+                                            </h5>
+                                        </div>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Marble Law blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Join our attorney network
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Accessibility
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Terms of Services
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                Privacy Policy
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        About us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        How we price
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Our pro bono work
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Reviews
-                                    </a>
-                                </li>
-                            </ul>
+                            </div>
+                            <div class="w-full lg:flex-1 order-4">
+                                <div class="footer-menu">
+                                    <div class="title">
+                                        <h5>
+                                            Client support
+                                        </h5>
+                                    </div>
+                                    <ul class="conatact-info">
+                                        <li>
+                                            <img src="../assets/images/i-icon.svg" alt="">
+                                            <a href="javascript:void(0);">
+                                                Help Center
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="../assets/images/phone-icon.svg" alt="">
+                                            <a href="javascript:void(0);">
+                                                All Applications
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="social-icon">
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <img src="../assets/images/twiteer.svg" height="20" width="20" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <img src="../assets/images/linkdin.svg" height="20" width="20" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <img src="../assets/images/facebook.svg" height="20" width="20" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <img src="../assets/images/Instagram.svg" height="20" width="20" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-full lg:flex-1">
-                        <div class="footer-menu">
-                            <ul>
-                                <div class="title">
-                                    <h5>
-                                        Resources
-                                    </h5>
-                                </div>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Marble Law blog
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Join our attorney network
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Accessibility
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Terms of Services
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+            </div>
+            <div class="footer-bottom pt-32">
+                <div class="flex flex-wrap justify-between w-full gap-[24px]">
+                    <div class="footer-logo">
+                        <img src="../assets/images/footer-logo.png" height="40" width="190" alt="">
                     </div>
-                    <div class="w-full lg:flex-1">
-                        <div class="footer-menu">
-                                <div class="title">
-                                    <h5>
-                                        Client support
-                                    </h5>
-                                </div>
-                            <ul class="conatact-info">
-                                <li>
-                                    <img src="../assets/images/i-icon.svg" alt="">
-                                    <a href="javascript:void(0);">
-                                        Help Center
-                                    </a>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/phone-icon.svg" alt="">
-                                    <a href="javascript:void(0);">
-                                        All Applications
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="copy-right">
+                        <div class="content">
+                            <p>
+                                © 2023 VisaNation. All rights reserved.
+                            </p>
                         </div>
                     </div>
                 </div>

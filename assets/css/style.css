@@ -18,7 +18,7 @@
   }
 
   .container-fluid {
-      @apply w-full px-[104px] lgscreen:px-[40px] ;
+      @apply w-full px-[104px] lgscreen:px-[40px] smscreen2:px-[16px] ;
   }
     
   p {
@@ -63,7 +63,7 @@
 
   h2,
   .h2 {
-      @apply text-28 xl:text-48 xsscreen2:text-24 leading-[116.667%] font-400;
+      @apply text-48  leading-[140%] font-400;
   }
   h3,
   .h3 {
@@ -99,7 +99,7 @@
     @apply text-20 lgscreen:text-[16px] mdscreen:text-[14px] font-400 leading-[160%]
   }
   .content.md p{
-    @apply text-18 lgscreen:text-[15px] font-400 leading-[177%] font-plus
+    @apply text-18 lgscreen:text-[16px] font-400 leading-[177%] font-plus
   }
   .content.white p{
     @apply text-White
@@ -727,6 +727,9 @@
     .faq-wrapper .accordion-content {
         @apply pt-30
     }
+    .faq-wrapper .accordion-item .title h6 {
+        @apply text-16 font-500;
+    }
 
     /* conatct-start */
     .contact-wrapper .contact-img .img{
@@ -750,16 +753,19 @@
     .footer h4,
     .footer h5,
     .footer h6 {
-        @apply font-helvetica font-400 leading-[150%] text-White
+        @apply font-400 leading-[150%] text-White
     }
     .footer .content p {
-        @apply font-helvetica font-400 text-16 leading-[150%] text-grey-200
+        @apply font-400 text-16 leading-[150%] text-grey-200
     }
     .footer a {
-        @apply font-helvetica text-14 leading-[150%] font-400 text-slate-100
+        @apply text-14 leading-[150%] font-400 text-slate-100
+    }
+    .footer a:hover {
+        @apply text-secondary-200;
     }
     .footer .footer-menu .title h5 {
-        @apply font-500 text-slate-100 mb-8;
+        @apply font-500 lg:text-slate-100 mb-8 text-secondary-100 ;
     }
     .footer .footer-menu ul li {
         @apply pt-[16px]
@@ -768,11 +774,20 @@
         @apply text-16 leading-[150%] font-helvetica text-slate-200 
     }
     .newsletter-form .submit-btn {
-        @apply !rounded-[4px] font-600 font-helvetica text-16
+        @apply !rounded-[4px] font-600 font-helvetica text-16 px-18 py-10
     }
     .conatact-info li {
         @apply flex flex-wrap  items-center gap-[8px]   
     }
+    .social-icon {
+        @apply flex flex-wrap justify-start gap-[24px];
+    }
+     .copy-right .content p {
+        @apply text-14 font-400 leading-[150%] font-roboto text-slate-100;
+    }
+    /* .footer-menu li {
+        @apply xsscreen2:max-w-[160px]
+    } */
 
  
 }

@@ -35,6 +35,7 @@ module.exports = {
             },
             secondary: {
                 100: '#FF9178',
+                200: '#FFCCC0',
                 300: '#FFEFEB',
                 400: '#FF5B35',
                 500: '#B54126',
@@ -365,6 +366,7 @@ module.exports = {
                 xxl: { 'min': '1366px' },
                 xxxl: { 'min': '1440px' },
                 xl2: { 'min': '1512px' },
+                
                 xlscreen2: { 'max': '1440px' },
                 xlscreen: { 'max': '1199.9px' },
                 lgscreen: { 'max': '1023px' },
@@ -373,11 +375,12 @@ module.exports = {
                 smscreen2: { 'max': '639px' },
                 smscreen: { 'max': '575px' },
                 xsscreen2: { 'max': '479px' },
-                xsscreen3: { 'max': '374px' },
+                xsscreen3: { 'max': '375px' },
                 xsscreen: { 'max': '320px' },
                 max_width_991: { 'raw': '(max-width: 991px) and (min-width: 768px)' },
                 min_width_768: { 'raw': '(max-width: 1023px) and (min-width: 768px)' },
                 min_width_1024: { 'raw': '(max-width: 1199.9px) and (min-width: 1024px)' },
+                min_width_375: {'raw': '(max-width: 1023px) and (min-width: 375px)'},
             }
         }
     },

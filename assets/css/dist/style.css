@@ -34,6 +34,13 @@ body {
   }
 }
 
+@media (max-width: 639px) {
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px
+  }
+}
+
 p {
   margin: 0px;
   font-size: 16px;
@@ -103,23 +110,9 @@ h1,
 
 h2,
   .h2 {
-  font-size: 28px;
+  font-size: 48px;
   font-weight: 400;
-  line-height: 116.667%
-}
-
-@media (min-width: 1200px) {
-  h2,
-  .h2 {
-    font-size: 48px
-  }
-}
-
-@media (max-width: 479px) {
-  h2,
-  .h2 {
-    font-size: 24px
-  }
+  line-height: 140%
 }
 
 h3,
@@ -217,7 +210,7 @@ h6,
 
 @media (max-width: 1023px) {
   .content.md p {
-    font-size: 15px
+    font-size: 16px
   }
 }
 
@@ -794,6 +787,14 @@ h6,
   order: 2
 }
 
+.order-3 {
+  order: 3
+}
+
+.order-4 {
+  order: 4
+}
+
 .m-0 {
   margin: 0px
 }
@@ -998,6 +999,10 @@ h6,
   width: 1.5rem
 }
 
+.w-6\/12 {
+  width: 50%
+}
+
 .w-7 {
   width: 1.75rem
 }
@@ -1016,10 +1021,6 @@ h6,
 
 .w-\[24px\] {
   width: 24px
-}
-
-.w-\[269px\] {
-  width: 269px
 }
 
 .w-\[3px\] {
@@ -1143,6 +1144,10 @@ h6,
 
 .gap-\[8px\] {
   gap: 8px
+}
+
+.gap-\[48px\] {
+  gap: 48px
 }
 
 .overflow-hidden {
@@ -1381,6 +1386,11 @@ h6,
   padding-right: 16px
 }
 
+.px-18 {
+  padding-left: 18px;
+  padding-right: 18px
+}
+
 .px-20 {
   padding-left: 20px;
   padding-right: 20px
@@ -1439,6 +1449,11 @@ h6,
 .py-30 {
   padding-top: 30px;
   padding-bottom: 30px
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px
 }
 
 .py-40 {
@@ -1536,12 +1551,12 @@ h6,
   padding-right: 55px
 }
 
-.pr-\[48px\] {
-  padding-right: 48px
-}
-
 .pr-\[55px\] {
   padding-right: 55px
+}
+
+.pt-10 {
+  padding-top: 10px
 }
 
 .pt-16 {
@@ -1554,6 +1569,10 @@ h6,
 
 .pt-30 {
   padding-top: 30px
+}
+
+.pt-32 {
+  padding-top: 32px
 }
 
 .pt-40 {
@@ -1602,6 +1621,10 @@ h6,
 
 .font-plus {
   font-family: "Plus Jakarta Sans", sans-serif
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
 }
 
 .text-14 {
@@ -1720,6 +1743,10 @@ h6,
   line-height: 133.3333%
 }
 
+.leading-\[140\%\] {
+  line-height: 140%
+}
+
 .leading-\[150\%\] {
   line-height: 150%
 }
@@ -1773,6 +1800,16 @@ h6,
 .text-primary-900 {
   --tw-text-opacity: 1;
   color: rgb(0 16 44 / var(--tw-text-opacity))
+}
+
+.text-secondary-100 {
+  --tw-text-opacity: 1;
+  color: rgb(255 145 120 / var(--tw-text-opacity))
+}
+
+.text-secondary-200 {
+  --tw-text-opacity: 1;
+  color: rgb(255 204 192 / var(--tw-text-opacity))
 }
 
 .text-secondary-400 {
@@ -2565,6 +2602,11 @@ h6,
   padding-top: 30px
 }
 
+.faq-wrapper .accordion-item .title h6 {
+  font-size: 16px;
+  font-weight: 500
+}
+
 /* conatct-start */
 
 .contact-wrapper .contact-img .img {
@@ -2603,7 +2645,6 @@ h6,
     .footer h4,
     .footer h5,
     .footer h6 {
-  font-family: Helvetica Neue;
   font-weight: 400;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -2611,7 +2652,6 @@ h6,
 }
 
 .footer .content p {
-  font-family: Helvetica Neue;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
@@ -2620,7 +2660,6 @@ h6,
 }
 
 .footer a {
-  font-family: Helvetica Neue;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
@@ -2628,11 +2667,23 @@ h6,
   color: rgb(248 250 252 / var(--tw-text-opacity))
 }
 
+.footer a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 204 192 / var(--tw-text-opacity))
+}
+
 .footer .footer-menu .title h5 {
   margin-bottom: 8px;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity))
+  color: rgb(255 145 120 / var(--tw-text-opacity))
+}
+
+@media (min-width: 1024px) {
+  .footer .footer-menu .title h5 {
+    --tw-text-opacity: 1;
+    color: rgb(248 250 252 / var(--tw-text-opacity))
+  }
 }
 
 .footer .footer-menu ul li {
@@ -2657,6 +2708,10 @@ h6,
 
 .newsletter-form .submit-btn {
   border-radius: 4px !important;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: Helvetica Neue;
   font-size: 16px;
   font-weight: 600
@@ -2668,6 +2723,26 @@ h6,
   align-items: center;
   gap: 8px
 }
+
+.social-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px
+}
+
+.copy-right .content p {
+  font-family: "Roboto", sans-serif;;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity))
+}
+
+/* .footer-menu li {
+        @apply xsscreen2:max-w-[160px]
+    } */
 
 .last\:mb-0:last-child {
   margin-bottom: 0px
@@ -2696,6 +2771,10 @@ h6,
 
   .lg\:order-2 {
     order: 2
+  }
+
+  .lg\:order-3 {
+    order: 3
   }
 
   .lg\:mx-\[40px\] {
@@ -2734,6 +2813,14 @@ h6,
 
   .lg\:w-8\/12 {
     width: 66.666667%
+  }
+
+  .lg\:w-\[269px\] {
+    width: 269px
+  }
+
+  .lg\:w-full {
+    width: 100%
   }
 
   .lg\:max-w-\[504px\] {
@@ -2789,12 +2876,21 @@ h6,
     padding-right: 40px
   }
 
+  .lg\:pr-\[48px\] {
+    padding-right: 48px
+  }
+
   .lg\:pt-\[32px\] {
     padding-top: 32px
   }
 
   .lg\:text-right {
     text-align: right
+  }
+
+  .lg\:text-slate-100 {
+    --tw-text-opacity: 1;
+    color: rgb(248 250 252 / var(--tw-text-opacity))
   }
 }
 
@@ -2834,12 +2930,20 @@ h6,
     margin-bottom: 40px
   }
 
+  .lgscreen\:flex-col {
+    flex-direction: column
+  }
+
   .lgscreen\:gap-\[10px\] {
     gap: 10px
   }
 
   .lgscreen\:gap-\[30px\] {
     gap: 30px
+  }
+
+  .lgscreen\:gap-\[48px\] {
+    gap: 48px
   }
 
   .lgscreen\:px-\[40px\] {
@@ -2857,11 +2961,6 @@ h6,
     padding-bottom: 50px
   }
 
-  .lgscreen\:py-\[30px\] {
-    padding-top: 30px;
-    padding-bottom: 30px
-  }
-
   .lgscreen\:py-\[50px\] {
     padding-top: 50px;
     padding-bottom: 50px
@@ -2873,10 +2972,6 @@ h6,
 
   .lgscreen\:text-32 {
     font-size: 32px
-  }
-
-  .lgscreen\:text-\[15px\] {
-    font-size: 15px
   }
 
   .lgscreen\:text-\[16px\] {
@@ -2899,12 +2994,25 @@ h6,
 }
 
 @media (max-width: 639px) {
+  .smscreen2\:px-\[16px\] {
+    padding-left: 16px;
+    padding-right: 16px
+  }
+
   .smscreen2\:text-24 {
     font-size: 24px
   }
 }
 
 @media (max-width: 479px) {
+  .xsscreen2\:mb-48 {
+    margin-bottom: 48px
+  }
+
+  .xsscreen2\:max-w-\[160px\] {
+    max-width: 160px
+  }
+
   .xsscreen2\:text-24 {
     font-size: 24px
   }
