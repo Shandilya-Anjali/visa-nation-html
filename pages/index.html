@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>visa nation</title>
     <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
@@ -33,7 +34,7 @@
     <!--header-start-->
     <header id="header" class="ctm-header">
         <div class="container-fluid">
-            <div class="flex flex-wrap justify-between items-center m-0 p-0 relative w-full">
+            <div class="flex flex-wrap justify-between items-center m-0 p-0 relative w-full xlscreen:py-16">
                 <div class="logo-block">
                     <span class="logo">
                         <a href="index.html" aria-label="VisaNation Law Group"><img
@@ -41,132 +42,144 @@
                                 alt="VisaNation Law Group"></a>
                     </span>
                 </div>
-                <button class="nav-opener button-container" aria-label="Menu Open">
+                <button
+                    class="navbar-toggler bg-transparent border-0 xlscreen:flex xlscreen:flex-col gap-y-1 xl:hidden p-0 order-1">
                     <span class="top"></span>
                     <span class="middle"></span>
                     <span class="bottom"></span>
                 </button>
-                <nav class="nav-bar nav-drop ">
-                    <ul class="main-nav lg:flex lg:flex-wrap lg:gap-[30px]">
-                        <li class="menu-item">
-                            <a href="#" class="has-submenu">Services
-                                <span class="sub-arrow"></span>
-                            </a>
-                            <ul class="mega-menu hidden">
-                                <li class="container-fluid">
-                                    <div class="mega-menu__inner">
-                                        <div class="mega-menu__left">
-                                            <div class="mega-menu__image"><img
-                                                    src="../assets/images/VisaNation-immigration-software.gif"
-                                                    alt="VisaNation immigration software"></div>
-                                            <h4 class="mega-menu__heading">Immigration Expertise Delivered</h4>
-                                            <p class="mega-menu__content">Let our deep legal expertise and
-                                                technology-enabled processes guide you in your U.S. immigration journey
-                                            </p>
-                                            <div class="mega-menu__cta"><a href="#" target="">Success Stories</a></div>
+                <nav class="nav-bar nav-drop">
+                    <div id="menu-main-menu" class="mobile-menu-main">
+                        <ul class="main-nav flex xlscreen:gap-5 xlscreen:flex-col xl:flex-wrap xl:gap-[30px]">
+                            <li class="menu-item relative xl:static has-submenu">
+                                <a href="#">Services
+                                </a>
+                                <ul class="sub-menu bg-White border-1 border-solid border-[#dadfe7] p-40">
+                                    <li>
+                                        <div
+                                            class="flex xlscreen:flex-col xl:flex-wrap items-stretch justify-start w-full m-0 p-0">
+                                            <div class="mega-menu__left lg:flex-[0_0_250px] hidden xl:block">
+                                                <div class="mega-menu__image">
+                                                    <img src="../assets/images/VisaNation-immigration-software.gif"
+                                                        alt="VisaNation immigration software">
+                                                </div>
+                                                <h4 class="mega-menu__heading">Immigration Expertise Delivered</h4>
+                                                <p class="mega-menu__content">Let our deep legal expertise and
+                                                    technology-enabled processes guide you in your U.S. immigration
+                                                    journey
+                                                </p>
+                                                <div class="mega-menu__cta">
+                                                    <a href="#" target="">Success Stories</a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="mega-menu__right lg:flex-1 border-0 border-l-1 border-solid border-Black">
+                                                <ul class="grid grid-cols-1 xl:grid-cols-3 w-full">
+                                                    <li class="menu-item"><a href="#">Work Visas</a>
+                                                        <ul class="sub-inner-menu">
+                                                            <li class="menu-item"><a href="#">H-1B Visa</a></li>
+                                                            <li class="menu-item"><a href="#">L-1 Visa</a></li>
+                                                            <li class="menu-item"><a href="#">O-1 Visa</a>
+                                                            </li>
+                                                            <li class="menu-item"><a href="#">TN
+                                                                    Visa</a></li>
+                                                            <li class="menu-item"><a href="#">J-1 Visa</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="#">Employment Green Card</a>
+                                                        <ul class="sub-inner-menu">
+                                                            <li class="menu-item"><a href="#">EB-1 Green
+                                                                    Card</a></li>
+                                                            <li class="menu-item"><a href="#">EB-2 Green
+                                                                    Card</a></li>
+                                                            <li class="menu-item"><a href="#">EB-2 NIW
+                                                                    Green Card</a></li>
+                                                            <li class="menu-item"><a href="#">EB-3
+                                                                    Green Card</a></li>
+                                                            <li class="menu-item"><a href="#">PERM
+                                                                    Labor Certification</a></li>
+                                                            <li class="menu-item"><a href="#">EB-4 Green
+                                                                    Card</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item"><a href="#">Investor
+                                                            Immigration</a>
+                                                        <ul class="sub-inner-menu">
+                                                            <li class="menu-item"><a href="#">E-1
+                                                                    Treaty Trader Visa</a></li>
+                                                            <li class="menu-item"><a href="#">E-2 Investor
+                                                                    Visa</a></li>
+                                                            <li class="menu-item"><a href="#">EB-5
+                                                                    Investment Green Card</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item"><a href="#">Family Based
+                                                            Immigration</a>
+                                                        <ul class="sub-inner-menu">
+                                                            <li class="menu-item"><a href="#">K-1
+                                                                    Fiancé Visa</a></li>
+                                                            <li class="menu-item"><a href="#">K-2
+                                                                    Visa</a></li>
+                                                            <li class="menu-item"><a href="#">K-3
+                                                                    Spouse Visa</a></li>
+                                                            <li class="menu-item"><a href="#">Marriage
+                                                                    Green Card</a></li>
+                                                            <li class="menu-item"><a href="#">Family
+                                                                    Green Card</a></li>
+                                                            <li class="menu-item"><a href="#">Sibling
+                                                                    Green Card</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item"><a href="#">Citizenship</a>
+                                                        <ul class="sub-inner-menu">
+                                                            <li class="menu-item"><a href="#">Overview</a>
+                                                            </li>
+                                                            <li class="menu-item"><a href="#">Naturalization
+                                                                    Interview</a></li>
+                                                            <li class="menu-item"><a href="">Citizenship
+                                                                    Denials</a></li>
+                                                            <li class="menu-item"><a href="">Naturalization
+                                                                    Replacement</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item"><a href="#">Other</a>
+                                                        <ul class="sub-inner-menu">
+                                                            <li class="menu-item"><a href="">B-1
+                                                                    Visa</a></li>
+                                                            <li class="menu-item"><a href="">F-1
+                                                                    Student Visa</a></li>
+                                                            <li class="menu-item"><a href="">R-1
+                                                                    Visa</a></li>
+                                                            <li class="menu-item"><a href="">Green
+                                                                    Card Lottery</a></li>
+                                                            <li class="menu-item"><a href="">GC
+                                                                    Consular Processing</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="mega-menu__right">
-                                            <ul class="col-3">
-                                                <li class="menu-item"><a href="#">Work Visas</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="#">H-1B Visa</a></li>
-                                                        <li class="menu-item"><a href="#">L-1 Visa</a></li>
-                                                        <li class="menu-item"><a href="#">O-1 Visa</a>
-                                                        </li>
-                                                        <li class="menu-item"><a href="#">TN
-                                                                Visa</a></li>
-                                                        <li class="menu-item"><a href="#">J-1 Visa</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="#">Employment
-                                                        Green Card
-                                                    </a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="#">EB-1 Green
-                                                                Card</a></li>
-                                                        <li class="menu-item"><a href="#">EB-2 Green
-                                                                Card</a></li>
-                                                        <li class="menu-item"><a href="#">EB-2 NIW
-                                                                Green Card</a></li>
-                                                        <li class="menu-item"><a href="#">EB-3
-                                                                Green Card</a></li>
-                                                        <li class="menu-item"><a href="#">PERM
-                                                                Labor Certification</a></li>
-                                                        <li class="menu-item"><a href="#">EB-4 Green
-                                                                Card</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item"><a href="#">Investor
-                                                        Immigration</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="#">E-1
-                                                                Treaty Trader Visa</a></li>
-                                                        <li class="menu-item"><a href="#">E-2 Investor
-                                                                Visa</a></li>
-                                                        <li class="menu-item"><a href="#">EB-5
-                                                                Investment Green Card</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item"><a href="#">Family Based
-                                                        Immigration</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="#">K-1
-                                                                Fiancé Visa</a></li>
-                                                        <li class="menu-item"><a href="#">K-2
-                                                                Visa</a></li>
-                                                        <li class="menu-item"><a href="#">K-3
-                                                                Spouse Visa</a></li>
-                                                        <li class="menu-item"><a href="#">Marriage
-                                                                Green Card</a></li>
-                                                        <li class="menu-item"><a href="#">Family
-                                                                Green Card</a></li>
-                                                        <li class="menu-item"><a href="#">Sibling
-                                                                Green Card</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item"><a href="#">Citizenship</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="#">Overview</a>
-                                                        </li>
-                                                        <li class="menu-item"><a href="#">Naturalization
-                                                                Interview</a></li>
-                                                        <li class="menu-item"><a href="">Citizenship
-                                                                Denials</a></li>
-                                                        <li class="menu-item"><a href="">Naturalization
-                                                                Replacement</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item"><a href="#">Other</a>
-                                                    <ul class="sub-menu">
-                                                        <li class="menu-item"><a href="">B-1
-                                                                Visa</a></li>
-                                                        <li class="menu-item"><a href="">F-1
-                                                                Student Visa</a></li>
-                                                        <li class="menu-item"><a href="">R-1
-                                                                Visa</a></li>
-                                                        <li class="menu-item"><a href="">Green
-                                                                Card Lottery</a></li>
-                                                        <li class="menu-item"><a href="">GC
-                                                                Consular Processing</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">About us</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Why VisaNation?</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Testimonials</a>
-                        </li>
-                    </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item relative has-submenu">
+                                <a href="#">About us</a>
+                                <ul class="sub-menu xlscreen:pt-24">
+                                    <li class="menu-item"><a href="javascript:void(0);">Our Team</a></li>
+                                    <li class="menu-item"><a href="javascript:void(0);">Consultations</a></li>
+                                    <li class="menu-item"><a href="javascript:void(0);">Careers</a></li>
+                                    <li class="menu-item"><a href="javascript:void(0);">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item relative">
+                                <a href="#">Why VisaNation?</a>
+                            </li>
+                            <li class="menu-item relative">
+                                <a href="#">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <div class="tools-bar flex flex-wrap gap-[16px]">
                     <div class="btn-frame">
@@ -467,9 +480,10 @@
                 <div class="flex flex-wrap justify-center items-start gap-[125px] lgscreen:gap-[30px]">
                     <div class="w-full lg:flex-1">
                         <div class="zigzag-img gif video">
-                            <div class="img">
-                                <img src="../assets/images/zigzag-1.gif" width="" alt="zigzag-1">
-                            </div>
+                            <video loop muted autoplay playsinline poster="../assets/images/zigzag-1.webm"
+                                class="bg-video">
+                                <source type="video/mp4" src="../assets/images/zigzag-1.webm">
+                            </video>
                         </div>
                     </div>
                     <div class="w-full lg:flex-1">
@@ -792,9 +806,9 @@
                     <div class="swiper-slide my-[50px]">
                         <div
                             class="flex flex-wrap justify-center item-center lg:items-stretch w-full lg:gap-[48px] gap-[30px]">
-                            <div class="w-full lg:flex-1 lg:order-1 order-2 ">
-                                <div class="content-left  flex flex-col gap-[24px]">
-                                    <div class="title-p-800 flex flex-col gap-[40px] lgscreen:gap-[30px]">
+                            <div class="w-full lg:flex-1 ">
+                                <div class="content-left flex flex-col ">
+                                    <div class="title-p-800 flex flex-col lg:mb-24 mb-8 gap-[40px] lgscreen:gap-[24px]">
                                         <h2>
                                             Reuniting Families
                                         </h2>
@@ -810,7 +824,7 @@
                                             years. I received callbacks within the same day, and I never felt scared at
                                             any point in the process."</p>
                                     </div>
-                                    <div class="globle-list">
+                                    <div class="globle-list lg:mt-[32px] mt-[8px]">
                                         <ul>
                                             <li>
                                                 <span>
@@ -834,12 +848,12 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="btn-custom mt-[24px]">
+                                    <div class="btn-custom lg:mt-[48px] mt-[24px]">
                                         <a href="javascript:void(0);" class="btn btn-orange">Book Consultation</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full lg:flex-1 lg:order-2 order-1">
+                            <div class="w-full lg:flex-1 ">
                                 <div class="content-right">
                                     <div class="img">
                                         <img src="../assets/images/slider-img.jpg" width="504" height="620"
@@ -852,7 +866,7 @@
                     <div class="swiper-slide my-[50px]">
                         <div
                             class="flex flex-wrap justify-center item-center lg:items-stretch w-full lg:gap-[48px] gap-[30px]">
-                            <div class="w-full lg:flex-1 lg:order-1 order-2">
+                            <div class="w-full lg:flex-1 ">
                                 <div class="content-left  flex flex-col gap-[24px]">
                                     <div class="title-p-800 flex flex-col gap-[40px] lgscreen:gap-[30px]">
                                         <h2>
@@ -899,7 +913,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full lg:flex-1 lg:order-2 order-1">
+                            <div class="w-full lg:flex-1 ">
                                 <div class="content-right ">
                                     <div class="img">
                                         <img src="../assets/images/slider-img.jpg" width="504" height="620"
@@ -912,7 +926,7 @@
                     <div class="swiper-slide my-[50px]">
                         <div
                             class="flex flex-wrap justify-center item-center lg:items-stretch w-full lg:gap-[48px] gap-[30px]">
-                            <div class="w-full lg:flex-1 lg:order-1 order-2">
+                            <div class="w-full lg:flex-1 ">
                                 <div class="content-left  flex flex-col gap-[24px]">
                                     <div class="title-p-800 flex flex-col gap-[40px] lgscreen:gap-[30px]">
                                         <h2>
@@ -959,7 +973,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full lg:flex-1 lg:order-2 order-1">
+                            <div class="w-full lg:flex-1 ">
                                 <div class="content-right ">
                                     <div class="img">
                                         <img src="../assets/images/slider-img.jpg" width="504" height="620"
@@ -1029,7 +1043,7 @@
                         elementum tristique.
                     </p>
                 </div>
-                <div class="btn-custom flex flex-wrap justify-start items-start gap-[10px] mt-8">
+                <div class="btn-custom flex justify-start items-start gap-[10px] mt-8">
                     <a href="javascript:void(0);" class="btn btn-orange">
                         Get Your Free Assessment
                     </a>
@@ -1043,12 +1057,12 @@
     <!--full-imgbox-start-->
 
     <!--faq-start-->
-    <section class="faq-wrapper py-[112px]">
+    <section class="faq-wrapper py-[112px] lgscreen:py-[48px]">
         <div class="container-fluid">
             <div class="flex flex-wrap justify-start item-start lgscreen:gap-[30px]">
                 <div class="w-full lg:w-5/12 lg:pr-[40px]">
-                    <div class="title mb-24">
-                        <h2 class="h1 font-700">
+                    <div class="title lg:mb-24 mb-16">
+                        <h2 class="h1 lg:font-700">
                             FAQs
                         </h2>
                     </div>
@@ -1291,7 +1305,7 @@
                         </div>
                     </div>
                     <div class="newsletter-form">
-                        <div class="subscribe-wrapper flex flex-wrap gap-[16px]">
+                        <div class="subscribe-wrapper flex gap-[16px]">
                             <label for="email" class="px-14 py-10 bg-White rounded-[4px]">
                                 <input type="email" name="email"
                                     class="subscribe-input lg:w-[269px] border-0 h-full font-helvetica "

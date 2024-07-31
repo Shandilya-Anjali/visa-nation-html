@@ -45,6 +45,7 @@ module.exports = {
                 200: '#B0BCD0',
                 300: '#EAECF0',
                 700: '#2F2E2E',
+                400: '#d7dde7',
             },
             slate: {
                 100: '#F8FAFC',
