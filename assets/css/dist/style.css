@@ -95,10 +95,17 @@ h1,
 
 h1,
     .h1 {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 400;
   text-transform: capitalize;
-  line-height: 128.571%
+  line-height: 120%
+}
+
+@media (min-width: 1024px) {
+  h1,
+    .h1 {
+    line-height: 128.571%
+  }
 }
 
 @media (min-width: 1200px) {
@@ -900,6 +907,10 @@ h6,
   margin-bottom: 48px
 }
 
+.mb-\[5px\] {
+  margin-bottom: 5px
+}
+
 .mb-\[8px\] {
   margin-bottom: 8px
 }
@@ -1004,8 +1015,8 @@ h6,
   height: 432px
 }
 
-.h-\[96px\] {
-  height: 96px
+.h-\[64px\] {
+  height: 64px
 }
 
 .h-\[calc\(100dvh_-_72px\)\] {
@@ -1018,6 +1029,18 @@ h6,
 
 .h-full {
   height: 100%
+}
+
+.max-h-\[19px\] {
+  max-height: 19px
+}
+
+.max-h-\[30px\] {
+  max-height: 30px
+}
+
+.max-h-\[38px\] {
+  max-height: 38px
 }
 
 .min-h-\[80\] {
@@ -1104,12 +1127,24 @@ h6,
   width: 100%
 }
 
+.max-w-\[153px\] {
+  max-width: 153px
+}
+
 .max-w-\[208px\] {
   max-width: 208px
 }
 
+.max-w-\[48px\] {
+  max-width: 48px
+}
+
 .max-w-\[504px\] {
   max-width: 504px
+}
+
+.max-w-\[58px\] {
+  max-width: 58px
 }
 
 .flex-1 {
@@ -1382,6 +1417,11 @@ h6,
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
+.bg-\[\#d5dde5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 221 229 / var(--tw-bg-opacity))
+}
+
 .bg-grey-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(176 188 208 / var(--tw-bg-opacity))
@@ -1595,6 +1635,11 @@ h6,
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px
+}
+
+.py-22 {
+  padding-top: 22px;
+  padding-bottom: 22px
 }
 
 .py-25 {
@@ -1831,6 +1876,14 @@ h6,
   font-size: 56px
 }
 
+.text-\[18px\] {
+  font-size: 18px
+}
+
+.text-\[38px\] {
+  font-size: 38px
+}
+
 .text-\[48px\] {
   font-size: 48px
 }
@@ -1887,16 +1940,16 @@ h6,
   line-height: 32px
 }
 
+.leading-\[1\.4px\] {
+  line-height: 1.4px
+}
+
 .leading-\[116\.667\%\] {
   line-height: 116.667%
 }
 
 .leading-\[120\%\] {
   line-height: 120%
-}
-
-.leading-\[128\.571\%\] {
-  line-height: 128.571%
 }
 
 .leading-\[130\%\] {
@@ -2272,13 +2325,7 @@ h6,
     border-width: 0px;
     padding: 0px
   }
-}
 
-/* .main-nav>li.active>.sub-menu .mega-menu__right ul {
-        @apply xlscreen:pt-[24px];
-    } */
-
-@media (max-width: 1199.9px) {
   .sub-menu .mega-menu__right .menu-item .sub-inner-menu {
     display: none
   }
@@ -2302,11 +2349,6 @@ h6,
 }
 
 .main-nav a:hover {
-  color: #ff7a59
-}
-
-.main-nav a.highlighted {
-  background: #d7dde7;
   color: #ff7a59
 }
 
@@ -2434,21 +2476,6 @@ header.header.is-sticky .navbar-toggler span {
   padding: 0
 }
 
-/* .main-nav ul ul {
-        margin-top: -47px!important
-    } */
-
-.main-nav .arrows {
-  padding: 0 10px 0 0
-}
-
-.main-nav .arrows:before {
-  content: ">";
-  position: absolute;
-  top: 0;
-  right: 0
-}
-
 .button-container,
     .button-container span {
   transition: all .25s ease;
@@ -2471,19 +2498,6 @@ header.header.is-sticky .navbar-toggler span {
   position: relative;
   width: 28px;
   height: 19px
-}
-
-.nav-active .button-container .top {
-  transform: translateY(8px) translateX(0) rotate(45deg)
-}
-
-.nav-active .button-container .middle {
-  opacity: 0;
-  background: #003362
-}
-
-.nav-active .button-container .bottom {
-  transform: translateY(-8px) translateX(0) rotate(-45deg)
 }
 
 .button-container span {
@@ -2624,11 +2638,21 @@ header.header.is-sticky .navbar-toggler span {
 }
 
 .mega-menu__right>ul>li>a {
-  padding: 5px 15px;
-  background: #d5dde5;
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 221 229 / var(--tw-bg-opacity));
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.4
+  line-height: 1.4px
+}
+
+@media (max-width: 1199.9px) {
+  .mega-menu__right>ul>li>a {
+    font-size: 16px
+  }
 }
 
 .mega-menu__right .sub-menu {
@@ -2724,8 +2748,13 @@ header.header.is-sticky .navbar-toggler span {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  border-radius: 16px;
   padding-top: 90.11%
+}
+
+@media (min-width: 1024px) {
+  .banner-wrapper .banner-img .img {
+    border-radius: 16px
+  }
 }
 
 .banner-img img {
@@ -2754,7 +2783,7 @@ header.header.is-sticky .navbar-toggler span {
 
 .trust-wrapper .trust-img {
   display: flex;
-  height: 96px;
+  height: 64px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -2768,10 +2797,40 @@ header.header.is-sticky .navbar-toggler span {
   padding-bottom: 24px;
   --tw-shadow: 0px 16px 48px 15px rgba(0, 0, 0, 0.12);;
   --tw-shadow-colored: 0px 16px 48px 15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+@media (min-width: 1024px) {
+  .trust-wrapper .trust-img {
+    height: 96px
+  }
+}
+
+.trust-wrapper .trust-img {
   background: rgba(255, 255, 255, 0.50);
   -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px)
+          backdrop-filter: blur(2px);
+}
+
+.trust-wrapper .trust-img:first-child .img  img {
+  max-height: 38px;
+  max-width: 58px;
+  -o-object-fit: contain;
+     object-fit: contain
+}
+
+.trust-wrapper .trust-img:nth-child(2n-1) .img img {
+  max-height: 19px;
+  max-width: 48px;
+  -o-object-fit: contain;
+     object-fit: contain
+}
+
+.trust-wrapper .trust-img:last-child .img img {
+  max-height: 30px;
+  max-width: 153px;
+  -o-object-fit: contain;
+     object-fit: contain
 }
 
 /* three-card-component-start */
@@ -3306,6 +3365,10 @@ header.header.is-sticky .navbar-toggler span {
     margin-top: 48px
   }
 
+  .lg\:h-\[96px\] {
+    height: 96px
+  }
+
   .lg\:w-3\/12 {
     width: 25%
   }
@@ -3370,6 +3433,10 @@ header.header.is-sticky .navbar-toggler span {
     gap: 48px
   }
 
+  .lg\:rounded-\[16px\] {
+    border-radius: 16px
+  }
+
   .lg\:object-\[0_-53px\] {
     -o-object-position: 0 -53px;
        object-position: 0 -53px
@@ -3410,6 +3477,10 @@ header.header.is-sticky .navbar-toggler span {
 
   .lg\:font-700 {
     font-weight: 700
+  }
+
+  .lg\:leading-\[128\.571\%\] {
+    line-height: 128.571%
   }
 
   .lg\:text-slate-100 {
@@ -3456,8 +3527,8 @@ header.header.is-sticky .navbar-toggler span {
     flex-wrap: wrap
   }
 
-  .xl\:gap-\[30px\] {
-    gap: 30px
+  .xl\:gap-\[32px\] {
+    gap: 32px
   }
 
   .xl\:bg-\[\#d7dde7\] {
@@ -3525,23 +3596,28 @@ header.header.is-sticky .navbar-toggler span {
     padding: 0px
   }
 
-  .xlscreen\:py-16 {
-    padding-top: 16px;
-    padding-bottom: 16px
+  .xlscreen\:py-22 {
+    padding-top: 22px;
+    padding-bottom: 22px
   }
 
   .xlscreen\:pt-24 {
     padding-top: 24px
   }
 
-  .xlscreen\:pt-\[24px\] {
-    padding-top: 24px
+  .xlscreen\:text-\[16px\] {
+    font-size: 16px
   }
 }
 
 @media (max-width: 1023px) {
   .lgscreen\:left-\[-40px\] {
     left: -40px
+  }
+
+  .lgscreen\:mx-auto {
+    margin-left: auto;
+    margin-right: auto
   }
 
   .lgscreen\:mb-30 {
@@ -3576,6 +3652,16 @@ header.header.is-sticky .navbar-toggler span {
     gap: 48px
   }
 
+  .lgscreen\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px
+  }
+
+  .lgscreen\:px-\[16px\] {
+    padding-left: 16px;
+    padding-right: 16px
+  }
+
   .lgscreen\:px-\[40px\] {
     padding-left: 40px;
     padding-right: 40px
@@ -3603,6 +3689,10 @@ header.header.is-sticky .navbar-toggler span {
 
   .lgscreen\:pl-\[32px\] {
     padding-left: 32px
+  }
+
+  .lgscreen\:text-center {
+    text-align: center
   }
 
   .lgscreen\:text-14 {
