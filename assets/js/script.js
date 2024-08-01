@@ -1,6 +1,6 @@
 $(document).ready(function ($) {
 
-    
+
     // Sticky Header
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 100) {
@@ -16,7 +16,7 @@ $(document).ready(function ($) {
     });
 
     // Toggle dropdown menu on click
-    $(".nav-bar ul li.has-submenu").click(function() {
+    $(".nav-bar ul li.has-submenu").click(function () {
         var $dropdown = $(this).children(".sub-menu");
 
         // Close other dropdowns
@@ -29,14 +29,14 @@ $(document).ready(function ($) {
     });
 
     // Toggle inner dropdown on click
-    $(".sub-menu .mega-menu__right .menu-item ").click(function(event) {
+    $(".sub-menu .mega-menu__right .menu-item ").click(function (event) {
         event.stopPropagation(); // Prevent dropdown from closing when inner dropdown is clicked
         $(this).toggleClass("open");
 
     });
 
     // Close dropdown when clicking outside
-    $(document).click(function(event) {
+    $(document).click(function (event) {
         if (!$(event.target).closest('.nav-bar ul li.has-submenu').length) {
             $(".nav-bar ul li.has-submenu ").removeClass("active")
                 .children(".sub-menu").slideUp();
@@ -99,9 +99,9 @@ $(document).ready(function ($) {
     $firstAccordion.find(".plus").hide().siblings(".minus").show();
 
 
-    
-    
-    
+
+
+
 });
 
 //counter
@@ -123,5 +123,7 @@ arr.map(function (item) {
     let stop = setInterval(function () {
         counterup()
     }, 2)
+
+
 
 })

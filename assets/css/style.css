@@ -78,7 +78,7 @@
 
     h3,
     .h3 {
-        @apply text-24 xl:text-32 leading-[130%] font-700;
+        @apply text-20 xl:text-32 leading-[130%] font-700;
     }
 
     h4,
@@ -179,11 +179,11 @@
 
 
     .subtitle-sm h3 {
-        @apply text-16 font-700 leading-[150%] !text-secondary-400;
+        @apply text-16 lgscreen:text-12 font-700 leading-[150%] !text-secondary-400;
     }
 
     .subtitle-md h3 {
-        @apply text-20 font-600 leading-[150%] !text-secondary-400;
+        @apply text-20 font-600 lgscreen:text-12 leading-[150%] !text-secondary-400;
     }
 
     .subtitle-big h3 {
@@ -198,7 +198,7 @@
 
 @layer components {
     .btn {
-        @apply inline-block text-center border-solid text-14 xsscreen2:text-[13px] font-500 leading-[150%] relative font-plus px-[16px] py-[10px]
+        @apply inline-block text-center text-14 xsscreen2:text-[13px] font-500 leading-[150%] relative font-plus px-[16px] py-[10px]
     }
 
     .btn:hover {
@@ -208,11 +208,14 @@
     }
 
     .btn-orange {
-        @apply bg-secondary-700 text-White border-secondary-700 rounded-[8px] py-12
+        @apply bg-secondary-700 text-White  rounded-[8px] py-12
     }
 
     .btn.btn-a-orange {
-        @apply bg-secondary-700 text-White border-secondary-700
+        @apply bg-secondary-700 text-White 
+    }
+    .btn.btn-a-orange:hover{
+        background-color: #cc6045;
     }
 
     .btn-a-orange .arrow {
@@ -220,7 +223,7 @@
     }
 
     .btn-blue {
-        @apply bg-primary-500 border-primary-500;
+        @apply bg-primary-500 ;
         color: #fff;
     }
 
@@ -289,11 +292,11 @@
     }
 
     .globle-list ul li span {
-        @apply ml-[34px]
+        @apply ml-[34px] text-16 lgscreen:text-14 leading-[150%] lgscreen:ml-[26px]
     }
 
     .globle-list ul li::before {
-        @apply content-[''] absolute top-0 left-0 bg-no-repeat bg-center h-[24px] w-[24px];
+        @apply content-[''] absolute top-0 left-0 bg-no-repeat bg-center bg-cover h-[24px] w-[24px] lgscreen:top-[8px] lgscreen:!h-[16px] lgscreen:!w-[16px];
         background-image: url('./../../images/check.svg');
     }
 
@@ -302,13 +305,29 @@
     }
 
     .globle-list ul {
-        @apply flex flex-col gap-[24px] mdscreen:gap-[15px]
+        @apply flex flex-col gap-[24px] mdscreen:gap-[16px]
+    }
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+        @apply transition-all duration-300 delay-150;
+    }
+
+    .swiper-button-next:hover svg,
+    .swiper-button-prev:hover svg {
+        @apply fill-primary-500
+    }
+    .swiper-button-next:hover svg path,
+    .swiper-button-prev:hover svg path {
+        @apply fill-White
     }
 
 
 }
 
 @layer utilities {
+    #header .container-fluid {
+        @apply xlscreen2:!px-50
+    }
     #header {
         @apply relative z-999 bg-White w-full;
     }
@@ -360,9 +379,9 @@
     }
 
     .tools-bar {
-        margin-left: 30px;
-        padding: 5px 0;
+        @apply xxl:ml-30 py-5 ml-10;
     }
+    
 
 
     .main-nav .arrows,
@@ -675,7 +694,7 @@
     }
 
     .mega-menu__right>ul>li>a {
-        @apply py-[5px] px-15 text-[18px] font-700 leading-[1.4px] bg-[#d5dde5] xlscreen:text-[16px];
+        @apply py-[5px] px-15 text-[18px] font-700 leading-[1.4] bg-[#d5dde5] xlscreen:text-[16px];
     }
 
     .mega-menu__right .sub-menu {
@@ -774,18 +793,21 @@
     }
 
     .trust-wrapper .trust-img {
-        @apply flex lg:h-[96px] h-[64px] flex-col justify-center items-center gap-[10px] py-[24px] rounded-[8px] border-1 border-White border-solid shadow-shadow;
+        @apply flex lg:h-[96px] h-[64px] flex-col justify-center items-center gap-[10px] py-[24px] lgscreen:px-[8px] rounded-[8px] border-1 border-White border-solid shadow-shadow;
         background: rgba(255, 255, 255, 0.50);
         backdrop-filter: blur(2px);
     }
-    .trust-wrapper .trust-img:first-child .img  img{
-        @apply max-w-[58px] max-h-[38px] object-contain;
+    .trust-wrapper .card:first-child .trust-imgbox .trust-img .img  img{
+        @apply lgscreen:max-w-[58px] lgscreen:max-h-[38px] lgscreen:object-contain;
     }
-    .trust-wrapper .trust-img:nth-child(2n-1) .img img {
-        @apply max-w-[48px] max-h-[19px] object-contain;
+    .trust-wrapper .card:nth-child(2) .trust-imgbox .trust-img .img img {
+        @apply lgscreen:max-w-[48px] lgscreen:max-h-[19px] lgscreen:object-contain;
     }
-    .trust-wrapper .trust-img:last-child .img img{
-        @apply max-w-[153px] max-h-[30px] object-contain;
+    .trust-wrapper .card:last-child .trust-imgbox .trust-img{
+        @apply lgscreen:px-0
+    }
+    .trust-wrapper .card:last-child .trust-imgbox .trust-img .img img{
+        @apply lgscreen:max-w-[153px] lgscreen:max-h-[30px] lgscreen:object-contain;
     }
 
     /* three-card-component-start */
@@ -794,13 +816,17 @@
     }
 
     .three-card-component-warpper .card-info ul li span {
-        @apply ml-[34px]
+        @apply ml-[34px] text-[16px] lgscreen:text-[14px] leading-[150%]  lgscreen:ml-[26px]
     }
 
     .three-card-component-warpper .card-info ul li::before {
-        @apply content-[''] absolute top-0 left-0 bg-no-repeat bg-center h-[24px] w-[24px];
+        @apply content-[''] absolute top-0 left-0 bg-no-repeat bg-center bg-cover lgscreen:top-[4px] h-[24px] w-[24px] lgscreen:h-[16px] lgscreen:w-[16px];
         background-image: url('./../../images/check.svg');
     }
+    .three-card-component-warpper .card-info ul  {
+        @apply flex flex-col gap-[24px] mdscreen:gap-[16px]
+    }
+
 
     /* four-card-component-start */
     .four-card-component-warpper .title h2 {
@@ -817,7 +843,7 @@
 
     /* zigzag-content-start */
     .zigzag-wrapper {
-        @apply relative flex flex-col gap-[40px] justify-start items-center m-0 p-0 w-full lgscreen:pl-[32px]
+        @apply relative flex flex-col gap-[40px]  lgscreen:gap-[32px] justify-start items-center m-0 p-0 w-full lgscreen:pl-[32px]
     }
 
     .zigzag-wrapper::before {
@@ -846,7 +872,7 @@
     }
 
     .zigzag-img .img img {
-        @apply absolute top-0 left-0 object-cover h-full w-full block;
+        @apply absolute top-0 left-0 object-cover lgscreen:rounded-[16px] h-full w-full block;
     }
 
     .zigzag-wrapper .zigzag-content.left {
@@ -987,6 +1013,9 @@
     .social-icon {
         @apply flex flex-wrap justify-start gap-[24px];
     }
+    .footer .social-icon a:hover img {
+        filter: invert(36%) sepia(31%) saturate(7315%) hue-rotate(327deg) brightness(107%) contrast(87%);
+    }
 
     .copy-right .content p {
         @apply text-14 font-400 leading-[150%] text-slate-100;
@@ -997,4 +1026,8 @@
     } */
 
 
+}
+
+.lity-active .lity-iframe .lity-container, .lity-youtube .lity-container, .lity-vimeo .lity-container, .lity-facebookvideo .lity-container, .lity-googlemaps .lity-container {
+    @apply !max-w-full
 }

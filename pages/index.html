@@ -16,6 +16,8 @@
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- lity -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.css">
 
     <!--font-->
     <link
@@ -34,7 +36,7 @@
     <!--header-start-->
     <header id="header" class="ctm-header">
         <div class="container-fluid ">
-            <div class="flex flex-wrap justify-between items-center m-0 p-0 relative w-full xlscreen:py-22">
+            <div class="flex xxl:flex-wrap justify-between items-center m-0 p-0 relative w-full xlscreen:py-22">
                 <div class="logo-block">
                     <span class="logo">
                         <a href="index.html" aria-label="VisaNation Law Group"><img
@@ -50,7 +52,7 @@
                 </button>
                 <nav class="nav-bar nav-drop">
                     <div id="menu-main-menu" class="mobile-menu-main">
-                        <ul class="main-nav flex xlscreen:gap-5 xlscreen:flex-col xl:flex-wrap xl:gap-[32px]">
+                        <ul class="main-nav flex !gap-[12px] xlscreen:flex-col xl:flex-wrap xl:gap-[32px]">
                             <li class="menu-item relative xl:static has-submenu">
                                 <a href="#">Services
                                 </a>
@@ -234,7 +236,7 @@
     <!--banner-end-->
 
     <!--trusted-start-->
-    <section class="trust-wrapper pb-48">
+    <section class="trust-wrapper pb-48 lgscreen:pb-32">
         <div class="container-fluid">
             <div class="title mb-16">
                 <h6>
@@ -242,25 +244,31 @@
                 </h6>
             </div>
             <div class="trust-content">
-                <div class="flex justify-center items-center gap-[24px]">
-                    <div class="w-full lg:w-3/12 bg-White">
-                        <div class="trust-img">
-                            <div class="img">
-                                <img src="../assets/images/AILA.png" width="160" height="64" alt="">
+                <div class="flex lgscreen:flex-row  lg:justify-center items-center lgscreen:gap-[16px] gap-[24px]">
+                    <div class="card flex-auto  lg:w-3/12 bg-White">
+                        <div class="trust-imgbox">
+                            <div class="trust-img">
+                                <div class="img">
+                                    <img src="../assets/images/AILA.png" width="160" height="64" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full lg:w-3/12 bg-White">
-                        <div class="trust-img">
-                            <div class="img">
-                                <img src="../assets/images/ABA.png" width="140" height="64" alt="">
+                    <div class="card flex-auto  lg:w-3/12 bg-White">
+                        <div class="trust-imgbox">
+                            <div class="trust-img">
+                                <div class="img">
+                                    <img src="../assets/images/ABA.png" width="140" height="64" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full lg:w-6/12 bg-White">
-                        <div class="trust-img">
-                            <div class="img">
-                                <img src="../assets/images/g-review.png" width="213" height="64" alt="">
+                    <div class="card flex-auto  lg:w-6/12 bg-White">
+                        <div class="trust-imgbox">
+                            <div class="trust-img">
+                                <div class="img">
+                                    <img src="../assets/images/g-review.png" width="213" height="64" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -272,9 +280,9 @@
 
 
     <!--three-card-component-start-->
-    <section class="three-card-component-warpper bg-White lgscreen:py-50 pt-[72px] relative ">
+    <section class="three-card-component-warpper bg-White lgscreen:pt-52 lgscreen:pb-0 pt-[72px] relative ">
         <div class="container-fluid">
-            <div class="title title-p-400 text-center lgscreen:mb-40 mb-60 last:mb-0">
+            <div class="title title-p-400 text-center lgscreen:mb-[32px] mb-60 last:mb-0">
                 <h2>
                     Benefits of Working with
                 </h2>
@@ -286,9 +294,9 @@
             </div>
             <div class="flex flex-wrap items-center justify-center relative m-0 p-0 w-full gap-[24px]">
                 <div class="w-full lg:flex-1">
-                    <div class="card bg-secondary-300 px-24 pt-24 pb-48 rounded-[24px]">
+                    <div class="card bg-secondary-300 lgscreen:px-16 lgscreen:pt-16 lgscreen:pb-24 px-24 pt-24 pb-48 rounded-[24px]">
                         <div class="card-img overflow-hidden">
-                            <img src="../assets/images/support.jpg" class="w-full h-full object-cover" width="407"
+                            <img src="../assets/images/support.jpg" class="w-full h-full object-cover rounded-[8px]" width="407"
                                 height="326" alt="6-Hour Private">
                         </div>
                         <div class="card-info globle-list block mt-[16px] ">
@@ -323,9 +331,9 @@
                     </div>
                 </div>
                 <div class="w-full lg:flex-1">
-                    <div class="card bg-secondary-300 px-24 pt-24 pb-48 rounded-[24px]">
+                    <div class="card bg-secondary-300 lgscreen:px-16 lgscreen:pt-16 lgscreen:pb-24 px-24 pt-24 pb-48 rounded-[24px]">
                         <div class="card-img overflow-hidden ">
-                            <img src="../assets/images/Expert.jpg" class="w-full h-full object-cover" width="407"
+                            <img src="../assets/images/Expert.jpg" class="w-full h-full object-cover rounded-[8px]" width="407"
                                 height="326" alt="6-Hour Private">
                         </div>
                         <div class="card-info block mt-[16px]  ">
@@ -360,9 +368,9 @@
                     </div>
                 </div>
                 <div class="w-full lg:flex-1">
-                    <div class="card bg-secondary-300 px-24 pt-24 pb-48 rounded-[24px]">
+                    <div class="card bg-secondary-300 px-24 lgscreen:px-16 lgscreen:pt-16 lgscreen:pb-24 pt-24 pb-48 rounded-[24px]">
                         <div class="card-img overflow-hidden ">
-                            <img src="../assets/images/Success.jpg" class="w-full h-full object-cover" width="407"
+                            <img src="../assets/images/Success.jpg" class="w-full h-full object-cover rounded-[8px]" width="407"
                                 height="326" alt="6-Hour Private">
                         </div>
                         <div class="card-info block mt-[16px]  ">
@@ -397,7 +405,7 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-custom py-48 text-center">
+            <div class="btn-custom py-48 lgscreen:py-[32px] text-center">
                 <a href="javascript:void(0);" class="btn btn-orange"> Book Consultation</a>
             </div>
         </div>
@@ -405,32 +413,32 @@
     <!--three-card-component-end-->
 
     <!--counter-start-->
-    <section class="counter-wrapper py-40">
+    <section class="counter-wrapper py-40 lgscreen:pb-32 lgscreen:pt-0">
         <div class="container-fluid">
-            <div class="flex flex-wrap justify-center  m-0 relative p-8 bg-primary-600 rounded-[16px]">
+            <div class="flex justify-center lgscreen:gap-[16px]  m-0 relative p-8 bg-primary-600 rounded-[16px]">
                 <div class="w-full lg:w-8/12">
-                    <div class="flex flex-wrap justify-center items-center p-0 m-0 gap-[16px]">
-                        <div class="counter-title title-white text-center max-w-[208px] mx-auto w-full my-[86px]">
+                    <div class="flex flex-wrap lgscreen:flex-col justify-center items-center p-0 m-0 gap-[16px]">
+                        <div class="counter-title title-white text-center max-w-[208px] mx-auto w-full my-[86px] lgscreen:my-[24px]">
                             <h2><span class="counter" data-number="2500"></span>+</h2>
                             <h5>Cases handled</h5>
                         </div>
-                        <div class="counter-title title-white text-center max-w-[208px] mx-auto w-full my-[86px]">
+                        <div class="counter-title title-white text-center max-w-[208px] mx-auto w-full my-[86px] lgscreen:my-[24px]">
                             <h2><span class="counter" data-number="3142"></span></h2>
                             <h5>Green card approved</h5>
                         </div>
-                        <div class="counter-title title-white text-center max-w-[208px] mx-auto w-full my-[86px]">
+                        <div class="counter-title title-white text-center max-w-[208px] mx-auto w-full my-[86px] lgscreen:my-[24px]">
                             <h2><span class="counter" data-number="67"></span>+</h2>
                             <h5>Countries</h5>
                         </div>
                     </div>
                 </div>
                 <div class="w-full lg:w-4/12 bg-yellow rounded-[16px]">
-                    <div class="flex justify-center items-center gap-[16px] ">
-                        <div class="counter-title title max-w-[208px] mx-auto text-center w-full my-[86px]">
+                    <div class="flex justify-center lgscreen:h-full lgscreen:flex-col items-center gap-[16px] ">
+                        <div class="counter-title title max-w-[208px] mx-auto text-center w-full my-[86px] lgscreen:my-[24px]">
                             <h2><span class="counter" data-number="900"></span>+</h2>
                             <h5>Families Reunited</h5>
                         </div>
-                        <div class="counter-title title max-w-[208px] mx-auto text-center w-full my-[86px]">
+                        <div class="counter-title title max-w-[208px] mx-auto text-center w-full my-[86px] lgscreen:my-[24px]">
                             <h2><span class="counter" data-number="15"></span>+</h2>
                             <h5>Years of experience</h5>
                         </div>
@@ -474,23 +482,25 @@
     <!--genral-content-end-->
 
     <!--zigzag-content-start-->
-    <section class="zigzag--img-content-wrapper pt-40 pb-[112px]">
+    <section class="zigzag--img-content-wrapper pt-[56px] pb-[112px] lgscreen:pb-48">
         <div class="container-fluid">
             <div class="zigzag-wrapper pb-16">
                 <div class="flex flex-wrap justify-center items-start gap-[125px] lgscreen:gap-[30px]">
-                    <div class="w-full lg:flex-1">
+                    <div class="w-full lg:flex-1 order-2 lg:order-1">
                         <div class="zigzag-img gif video">
-                            <video loop muted autoplay playsinline poster="../assets/images/zigzag-1.webm"
-                                class="bg-video">
-                                <source type="video/mp4" src="../assets/images/zigzag-1.webm">
-                            </video>
+                            <a href="../assets/images/zigzag-1.webm" data-lity>
+                                <video loop muted autoplay playsinline poster="../assets/images/zigzag-1.webm"
+                                    class="bg-video">
+                                    <source type="video/mp4" src="../assets/images/zigzag-1.webm" >
+                                </video>
+                            </a>
                         </div>
                     </div>
-                    <div class="w-full lg:flex-1">
+                    <div class="w-full lg:flex-1 order-1 lg:order-2">
                         <div class="zigzag-content right">
                             <span></span>
                             <div class="flex flex-col">
-                                <div class="title-p-500 flex flex-col gap-[24px] mb-16">
+                                <div class="title-p-500 flex flex-col gap-[24px] lgscreen:gap-[8px] mb-16">
                                     <div class="subtitle-md">
                                         <h3>
                                             Step 1
@@ -515,12 +525,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center items-start gap-[125px] lgscreen:gap-[30px]">
-                    <div class="w-full lg:flex-1 lg:order-1 order-2 lg:text-right">
+                <div class="flex flex-wrap justify-center items-start gap-[125px]  lgscreen:gap-[24px]">
+                    <div class="w-full lg:flex-1 lg:text-right">
                         <div class="zigzag-content left">
                             <span></span>
                             <div class="flex flex-col">
-                                <div class="title-p-500 flex flex-col gap-[24px] mb-16">
+                                <div class="title-p-500 flex flex-col gap-[24px] lgscreen:gap-[8px] mb-16">
                                     <div class="subtitle-md">
                                         <h3>
                                             Step 2
@@ -544,7 +554,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full lg:flex-1 lg:order-2 order-1">
+                    <div class="w-full lg:flex-1 ">
                         <div class="zigzag-img gif video">
                             <div class="img">
                                 <img src="../assets/images/zigzag-2.gif" alt="zigzag-2">
@@ -552,19 +562,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center items-start  gap-[125px] lgscreen:gap-[30px]">
-                    <div class="w-full lg:flex-1">
+                <div class="flex flex-wrap justify-center items-start gap-[125px] lgscreen:gap-[24px]">
+                    <div class="w-full lg:flex-1 lg:order-1 order-2">
                         <div class="zigzag-img ">
                             <div class="img">
                                 <img src="../assets/images/zigzag-3.jpg" alt="zigzag-3">
                             </div>
                         </div>
                     </div>
-                    <div class="w-full lg:flex-1">
+                    <div class="w-full lg:flex-1 lg:order-2 order-1">
                         <div class="zigzag-content right">
                             <span></span>
                             <div class="flex flex-col">
-                                <div class="title-p-500 flex flex-col gap-[24px] mb-16">
+                                <div class="title-p-500 flex flex-col gap-[24px] lgscreen:gap-[8px] mb-16">
                                     <div class="subtitle-md">
                                         <h3>
                                             Step 3
@@ -589,12 +599,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center items-start  gap-[125px] lgscreen:gap-[30px]">
-                    <div class="w-full lg:flex-1 lg:order-1 order-2 lg:text-right">
+                <div class="flex flex-wrap justify-center items-start  gap-[125px] lgscreen:gap-[24px]">
+                    <div class="w-full lg:flex-1 lg:text-right">
                         <div class="zigzag-content left">
                             <span></span>
                             <div class="flex flex-col">
-                                <div class="title-p-500 flex flex-col gap-[24px] mb-16">
+                                <div class="title-p-500 flex flex-col gap-[24px] lgscreen:gap-[8px] mb-16">
                                     <div class="subtitle-md">
                                         <h3>
                                             Step 4
@@ -617,7 +627,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full lg:flex-1 lg:order-2 order-1">
+                    <div class="w-full lg:flex-1 ">
                         <div class="zigzag-img">
                             <div class="img">
                                 <img src="../assets/images/zigzag-4.jpg" alt="zigzag-4">
@@ -625,19 +635,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center items-start  gap-[125px] lgscreen:gap-[30px]">
-                    <div class="w-full lg:flex-1">
+                <div class="flex flex-wrap justify-center items-start  gap-[125px] lgscreen:gap-[24px]">
+                    <div class="w-full lg:flex-1 lg:order-1 order-2">
                         <div class="zigzag-img">
                             <div class="img">
                                 <img src="../assets/images/zigzag-5.jpg" alt="zigzag-5">
                             </div>
                         </div>
                     </div>
-                    <div class="w-full lg:flex-1">
+                    <div class="w-full lg:flex-1 lg:order-2 order-1 ">
                         <div class="zigzag-content right">
                             <span></span>
                             <div class="flex flex-col">
-                                <div class="title-p-500 flex flex-col gap-[24px] mb-16">
+                                <div class="title-p-500 flex flex-col gap-[24px] lgscreen:gap-[8px] mb-16">
                                     <div class="subtitle-md">
                                         <h3>
                                             Step 5
@@ -668,7 +678,7 @@
     <!--zigzag-content-end-->
 
     <!--four-card--start-->
-    <section class="four-card-component-warpper bg-White lgscreen:py-30 pt-[72px] pb-[32px] relative ">
+    <section class="four-card-component-warpper bg-White pt-[72px] pb-[32px] lgscreen:py-0 relative ">
         <div class="container-fluid">
             <div class="title title-p-500 text-center lgscreen:mb-30 mb-[48px] last:mb-0">
                 <h2>
@@ -683,7 +693,7 @@
                                 height="248" alt="6-Hour Private">
                         </div>
                         <div class="card-info block pt-16 pb-32 px-16">
-                            <div class="title mb-26">
+                            <div class="title mb-26 lgscreen:mb-16">
                                 <h4>
                                     Fiancé Visa
                                 </h4>
@@ -693,7 +703,7 @@
                                     Bring your fiancé to the USA for your upcoming wedding.
                                 </p>
                             </div>
-                            <div class="btn-custom">
+                            <div class="btn-custom mt-8">
                                 <a href="javascript:void(0);" class="btn btn-link">
                                     Apply now
                                 </a>
@@ -708,7 +718,7 @@
                                 width="290" height="248" alt="6-Hour Private">
                         </div>
                         <div class="card-info block pt-16 pb-32 px-16">
-                            <div class="title mb-26 ">
+                            <div class="title mb-26 lgscreen:mb-16 ">
                                 <h4>
                                     Marriage Green Card
                                 </h4>
@@ -718,7 +728,7 @@
                                     Secure permanent residency for your spouse.
                                 </p>
                             </div>
-                            <div class="btn-custom">
+                            <div class="btn-custom mt-8">
                                 <a href="javascript:void(0);" class="btn btn-link">
                                     Apply now
                                 </a>
@@ -733,7 +743,7 @@
                                 height="248" alt="6-Hour Private">
                         </div>
                         <div class="card-info block pt-16 pb-32 px-16">
-                            <div class="title mb-26 ">
+                            <div class="title mb-26 lgscreen:mb-16 ">
                                 <h4>
                                     Parent Green Card
                                 </h4>
@@ -743,7 +753,7 @@
                                     Reunite with your parents and provide them with residency.
                                 </p>
                             </div>
-                            <div class="btn-custom">
+                            <div class="btn-custom mt-8">
                                 <a href="javascript:void(0);" class="btn btn-link">
                                     Apply now
                                 </a>
@@ -758,7 +768,7 @@
                                 width="290" height="248" alt="6-Hour Private">
                         </div>
                         <div class="card-info block pt-16 pb-32 px-16">
-                            <div class="title mb-26 ">
+                            <div class="title mb-26 lgscreen:mb-16 ">
                                 <h4>
                                     Children Green Card
                                 </h4>
@@ -768,7 +778,7 @@
                                     Ensure your children can join you in the United States.
                                 </p>
                             </div>
-                            <div class="btn-custom">
+                            <div class="btn-custom mt-8">
                                 <a href="javascript:void(0);" class="btn btn-link">
                                     Apply now
                                 </a>
@@ -777,7 +787,7 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-custom py-48 text-center">
+            <div class="btn-custom py-48 lgscreen:py-32 text-center">
                 <a href="javascript:void(0);" class="btn btn-orange"> Book Consultation</a>
             </div>
         </div>
@@ -785,9 +795,9 @@
     <!--four-card-component-end-->
 
     <!--testimonial-start-->
-    <section class="testimonial-wrapper py-[96px] lgscreen:py-[50px] bg-primary-50">
+    <section class="testimonial-wrapper py-[96px] bg-primary-50">
         <div class="container-fluid">
-            <div class="flex flex-col justify-center items-center lg:gap-[48px] gap-[24px]">
+            <div class="flex flex-col justify-center text-center items-center lg:gap-[48px] gap-[24px]">
                 <div class="title">
                     <h2>
                         What Our Customers Say
@@ -799,11 +809,11 @@
     <!--testimonial-end-->
 
     <!--zigzag-slider-start-->
-    <section class="zigzag-slider-wrapper  py-[96px] lgscreen:py-[50px]">
+    <section class="zigzag-slider-wrapper  py-[96px] lgscreen:pt-[48px] lgscreen:pb-[96px]">
         <div class="container-fluid relative">
             <div class="zigzag-swiper swiper lg:px-[40px] lg:mx-[40px] px-20">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide my-[50px]">
+                    <div class="swiper-slide lg:my-[50px]">
                         <div
                             class="flex flex-wrap justify-center item-center lg:items-stretch w-full lg:gap-[48px] gap-[30px]">
                             <div class="w-full lg:flex-1 ">
@@ -863,12 +873,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide my-[50px]">
+                    <div class="swiper-slide lg:my-[50px]">
                         <div
                             class="flex flex-wrap justify-center item-center lg:items-stretch w-full lg:gap-[48px] gap-[30px]">
                             <div class="w-full lg:flex-1 ">
-                                <div class="content-left  flex flex-col gap-[24px]">
-                                    <div class="title-p-800 flex flex-col gap-[40px] lgscreen:gap-[30px]">
+                                <div class="content-left flex flex-col ">
+                                    <div class="title-p-800 flex flex-col lg:mb-24 mb-8 gap-[40px] lgscreen:gap-[24px]">
                                         <h2>
                                             Reuniting Families
                                         </h2>
@@ -884,7 +894,7 @@
                                             years. I received callbacks within the same day, and I never felt scared at
                                             any point in the process."</p>
                                     </div>
-                                    <div class="globle-list">
+                                    <div class="globle-list lg:mt-[32px] mt-[8px]">
                                         <ul>
                                             <li>
                                                 <span>
@@ -908,13 +918,13 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="btn-custom mt-[24px]">
+                                    <div class="btn-custom lg:mt-[48px] mt-[24px]">
                                         <a href="javascript:void(0);" class="btn btn-orange">Book Consultation</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-full lg:flex-1 ">
-                                <div class="content-right ">
+                                <div class="content-right">
                                     <div class="img">
                                         <img src="../assets/images/slider-img.jpg" width="504" height="620"
                                             alt="slider-img">
@@ -923,12 +933,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide my-[50px]">
+                    <div class="swiper-slide lg:my-[50px]">
                         <div
                             class="flex flex-wrap justify-center item-center lg:items-stretch w-full lg:gap-[48px] gap-[30px]">
                             <div class="w-full lg:flex-1 ">
-                                <div class="content-left  flex flex-col gap-[24px]">
-                                    <div class="title-p-800 flex flex-col gap-[40px] lgscreen:gap-[30px]">
+                                <div class="content-left flex flex-col ">
+                                    <div class="title-p-800 flex flex-col lg:mb-24 mb-8 gap-[40px] lgscreen:gap-[24px]">
                                         <h2>
                                             Reuniting Families
                                         </h2>
@@ -944,7 +954,7 @@
                                             years. I received callbacks within the same day, and I never felt scared at
                                             any point in the process."</p>
                                     </div>
-                                    <div class="globle-list">
+                                    <div class="globle-list lg:mt-[32px] mt-[8px]">
                                         <ul>
                                             <li>
                                                 <span>
@@ -968,13 +978,13 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="btn-custom mt-[24px]">
+                                    <div class="btn-custom lg:mt-[48px] mt-[24px]">
                                         <a href="javascript:void(0);" class="btn btn-orange">Book Consultation</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-full lg:flex-1 ">
-                                <div class="content-right ">
+                                <div class="content-right">
                                     <div class="img">
                                         <img src="../assets/images/slider-img.jpg" width="504" height="620"
                                             alt="slider-img">
@@ -985,7 +995,7 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-navigation">
+            <div class="btn-navigation lgscreen:hidden">
                 <div class="swiper-button-prev  !h-[34px] !w-[34px] !opacity-100">
                     <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.375" y="1.26367" width="39.25" height="39.25" rx="19.625" fill="white" />
@@ -1488,8 +1498,9 @@
     <!--footer-end-->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
 
